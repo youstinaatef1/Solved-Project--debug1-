@@ -10,8 +10,8 @@ const createTask = (req, res) => {
 };
 
 const getTasks = (req, res) => {
-  Task.find().then((tasks) => {
-    res.status(200).json({ msg: "Tasks List", data: tasks });
+  Task.find().then((task) => {
+    res.status(200).json({ msg: "Tasks List", data: task });
   });
 };
 
